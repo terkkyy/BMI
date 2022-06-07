@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="loader.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href= "https://use.fontawesome.com/releases/v5.8.1/css/all.css"rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container"> 
+      <div class="row"> 
+        <div class="col-md-6"> 
+          <div class="card"> 
+            
+            <form onsubmit="event.preventDefault()" class="box"> 
+              <h1>Check your BMI</h1> 
+              <p class="text-muted"> Enter your weight and height  </p> 
+                
+                <div id="weightInput">
+                    <input id="weight" type="number" pattern="[0-9]*" name="a" placeholder="WEIGHT (KG)"/>
+                </div>
+                <div id="heightInput">
+                   <input id="height" type="number" pattern="[0-9]*" name="b" placeholder="HEIGHT (CM)"/> 
+                </div>
+
+               
+              <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+              
+              
+              <h2><div id="results" class="text-center">Your BMI results will appear here</div></h2>
+            </form> 
+
+          </div> 
+        </div> 
+      </div>
+  </div>
+
+
+    
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
